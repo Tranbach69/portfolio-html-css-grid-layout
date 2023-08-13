@@ -6,18 +6,46 @@
     background: #f7f7f7;
 }
 
-section > .container{
-    width: 1170px;
-    margin: auto;
-    display: block;
 
-    padding: 30px 50px;
+ul.custom-list {
+  list-style-type: none; /* Loại bỏ kiểu danh sách mặc định */
+  padding-left: 0; /* Xóa padding mặc định của danh sách */
 }
 
+ul.custom-list li::before {
+  content: "- "; /* Thay thế nội dung trước mỗi thẻ li bằng dấu - */
+}
+.w-40{
+  width: 40%;
+}
+.w-60{
+  width: 60%;
+}
+.fs-7{
+  font-size: 16px;
+}
+.fs-8{
+  font-size: 14px;
+}
+.fs-13px{
+  font-size: 13px;
+}
+.fs-9{
+  font-size: 12px;
+}
 #nav-bar {
     text-align: center;
 }
+::marker{
+  color: #199CDB;
+}
+.color199CDB{
+  color: #199CDB;
+}
 
+.bg-color199CDB{
+  background-color: #199CDB;
+}
 .header-title{
     z-index: 100;
     position: absolute;
@@ -183,4 +211,11 @@ font-size: 13px!important;
   bottom: 4px; /* Điều chỉnh khoảng cách từ viền dưới */
   border: 1px solid rgb(180, 165, 165); /* Tạo viền với độ rộng 2px và màu đen */
   pointer-events: none; /* Ngăn các tương tác với viền */
+}
+
+.container-cus{
+
+  width: 70%;
+  display: flex;
+  justify-content: center;
 }
