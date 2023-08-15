@@ -21,6 +21,9 @@ ul.custom-list li::before {
 .w-60{
   width: 60%;
 }
+.fs-17px{
+  font-size: 17px;
+}
 .fs-7{
   font-size: 16px;
 }
@@ -140,7 +143,7 @@ ul.custom-list li::before {
     flex-wrap: wrap;
   }
   .info-item span {
-    font-size: 13px;
+    font-size: 16px;
   }
   
   .info-item {
@@ -179,9 +182,6 @@ a {
     
  }
 
- p{
-font-size: 13px!important;
-  }
  .icon::before{
   
   width: 60px;
@@ -198,11 +198,11 @@ font-size: 13px!important;
   padding-right: 8px;
 }
 /* CSS Style */
-.col-4 {
+.col-4-cus {
   position: relative; /* Để vị trí tương đối cho viền */
 }
 
-.col-4::after {
+.col-4-cus::after {
   content: ""; /* Tạo một phần tử giả để chứa viền */
   position: absolute;
   top: 4px; /* Điều chỉnh khoảng cách từ viền trên */
@@ -213,9 +213,38 @@ font-size: 13px!important;
   pointer-events: none; /* Ngăn các tương tác với viền */
 }
 
+.col-4-cus2 {
+  position: relative; /* Để vị trí tương đối cho viền */
+}
+
+.col-4-cus2::after {
+  content: ""; /* Tạo một phần tử giả để chứa viền */
+  position: absolute;
+  top: 0px; /* Điều chỉnh khoảng cách từ viền trên */
+  left: 12px; /* Điều chỉnh khoảng cách từ viền trái */
+  right: 12px; /* Điều chỉnh khoảng cách từ viền phải */
+  bottom: 0px; /* Điều chỉnh khoảng cách từ viền dưới */
+  border: 1px solid rgb(180, 165, 165); /* Tạo viền với độ rộng 2px và màu đen */
+  pointer-events: none; /* Ngăn các tương tác với viền */
+}
+
 .container-cus{
 
   width: 70%;
   display: flex;
   justify-content: center;
+}
+
+.container-icon{
+  border-radius: 50%;
+  border: 1px solid #199CDB;
+  width: fit-content;
+  
+}
+
+.padding-icon1{
+  padding: 6px 8px 6px 8px;
+}
+.padding-icon2{
+  padding: 6px 12px 6px 12px;
 }
