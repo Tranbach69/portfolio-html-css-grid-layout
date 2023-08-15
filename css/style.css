@@ -6,14 +6,245 @@
     background: #f7f7f7;
 }
 
-section > .container{
-    width: 1170px;
-    margin: auto;
-    display: block;
 
-    padding: 30px 50px;
+ul.custom-list {
+  list-style-type: none; /* Loại bỏ kiểu danh sách mặc định */
+  padding-left: 0; /* Xóa padding mặc định của danh sách */
 }
 
+ul.custom-list li::before {
+  content: "- "; /* Thay thế nội dung trước mỗi thẻ li bằng dấu - */
+}
+.w-40{
+  width: 40%;
+}
+.w-60{
+  width: 60%;
+}
+.fs-17px{
+  font-size: 17px;
+}
+.fs-7{
+  font-size: 16px;
+}
+.fs-8{
+  font-size: 14px;
+}
+.fs-13px{
+  font-size: 13px;
+}
+.fs-9{
+  font-size: 12px;
+}
 #nav-bar {
     text-align: center;
+}
+::marker{
+  color: #199CDB;
+}
+.color199CDB{
+  color: #199CDB;
+}
+
+.bg-color199CDB{
+  background-color: #199CDB;
+}
+.header-title{
+    z-index: 100;
+    position: absolute;
+    color: #fff;
+    top: 100px; 
+    text-align: center;
+    
+}
+.header-title h5{
+    font-weight: 100;
+    color: rgb(224, 212, 212);
+    
+}
+.image{
+    width: 100%;
+}
+.image-container {
+    position: relative;
+    width: 100%; /* Kích thước của phần bị cắt */
+    height: 400px; /* Kích thước của phần bị cắt */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Màu nền mờ (màu đen với độ mờ 50%) */
+    z-index: 1; /* Đặt lớp pseudo-element trên ảnh */
+  }
+  .image-container img {
+    position: absolute; /* Lựa chọn phần bị cắt (tổng cộng là 100px chiều ngang và 100px chiều dọc) */
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Màu nền navbar */
+    height: 60px; /* Chiều cao navbar */
+  }
+  
+  .nav-item {
+    color: rgb(7, 7, 7); /* Màu chữ trong navbar */
+    padding: 10px 20px; /* Khoảng cách xung quanh nội dung trong mỗi nút */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    align-items: center;
+    display: flex;
+    transition: background-color 0.3s ease; /* Hiệu ứng màu nền hover */
+    padding: 0 30px 0 30px;
+    /* border-right: 1px solid rgb(19, 17, 17) Thêm viền màu bên phải */
+    border-left: 1px solid rgb(19, 17, 17); /* Thêm viền màu bên phải */
+    height: 60px;
+  }
+  .nav-item-last{
+    border-right: 1px solid rgb(19, 17, 17) 
+
+  }
+  .nav-item-middle{
+    flex-direction: column;
+
+  }
+  
+  .nav-item:hover {
+    background-color: #555; /* Màu nền hover */
+  }
+  .navbar-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .info-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .info-item span {
+    font-size: 16px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .info-value {
+    /* Không cần thiết phải sử dụng font-weight ở đây */
+  }
+  .w-90{
+    width: 90%;
+  }
+  .w-80{
+    width: 80%;
+  }
+  .footer{
+    width: 100%;
+    height: 80px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+a {
+    text-decoration: none !important; /* Loại bỏ gạch ngang */
+    color: #000000 !important; /* Màu chữ cho link */
+    
+ }
+
+ .icon::before{
+  
+  width: 60px;
+  height: 60px;
+ }
+
+ .gutter-8 {
+  margin-left: -4px; /* Đối với col-4, -8px / 2 = -4px */
+  margin-right: -4px;
+}
+
+.gutter-8 .col-4 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* CSS Style */
+.col-4-cus {
+  position: relative; /* Để vị trí tương đối cho viền */
+}
+
+.col-4-cus::after {
+  content: ""; /* Tạo một phần tử giả để chứa viền */
+  position: absolute;
+  top: 4px; /* Điều chỉnh khoảng cách từ viền trên */
+  left: 8px; /* Điều chỉnh khoảng cách từ viền trái */
+  right: 8px; /* Điều chỉnh khoảng cách từ viền phải */
+  bottom: 4px; /* Điều chỉnh khoảng cách từ viền dưới */
+  border: 1px solid rgb(180, 165, 165); /* Tạo viền với độ rộng 2px và màu đen */
+  pointer-events: none; /* Ngăn các tương tác với viền */
+}
+
+.col-4-cus2 {
+  position: relative; /* Để vị trí tương đối cho viền */
+}
+
+.col-4-cus2::after {
+  content: ""; /* Tạo một phần tử giả để chứa viền */
+  position: absolute;
+  top: 0px; /* Điều chỉnh khoảng cách từ viền trên */
+  left: 12px; /* Điều chỉnh khoảng cách từ viền trái */
+  right: 12px; /* Điều chỉnh khoảng cách từ viền phải */
+  bottom: 0px; /* Điều chỉnh khoảng cách từ viền dưới */
+  border: 1px solid rgb(180, 165, 165); /* Tạo viền với độ rộng 2px và màu đen */
+  pointer-events: none; /* Ngăn các tương tác với viền */
+}
+
+.container-cus{
+
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-icon{
+  border-radius: 50%;
+  border: 1px solid #199CDB;
+  width: fit-content;
+  
+}
+
+.padding-icon1{
+  padding: 6px 8px 6px 8px;
+}
+.padding-icon2{
+  padding: 6px 12px 6px 12px;
 }
