@@ -90,6 +90,7 @@ ul.custom-list li::before {
   .navbar {
     display: flex;
     align-items: center;
+    flex-wrap:nowrap !important;
     background-color: #ffffff; /* Màu nền navbar */
     height: 60px; /* Chiều cao navbar */
   }
@@ -101,7 +102,7 @@ ul.custom-list li::before {
     align-items: center;
     display: flex;
     transition: background-color 0.3s ease; /* Hiệu ứng màu nền hover */
-    padding: 0 30px 0 30px;
+    
     /* border-right: 1px solid rgb(19, 17, 17) Thêm viền màu bên phải */
     border-left: 1px solid rgb(19, 17, 17); /* Thêm viền màu bên phải */
     height: 60px;
@@ -247,4 +248,189 @@ a {
 }
 .padding-icon2{
   padding: 6px 12px 6px 12px;
+}
+@media (width<= 576px) {
+  .font-xs-12px {
+    font-size: 12px;
+  }
+  .font-xs-13px {
+    font-size: 13px;
+  }
+  .font-xs-14px {
+    font-size: 14px;
+  }
+  .font-xs-15px {
+    font-size: 15px;
+  }
+  .font-xs-16px {
+    font-size: 16px;
+  }
+  .font-xs-17px {
+    font-size: 17px;
+  }
+  .font-xs-18px {
+    font-size: 18px;
+  }
+  .font-xs-20px {
+    font-size: 20px;
+  }
+  .font-xs-22px {
+    font-size: 22px;
+  }
+  .font-xs-24px {
+    font-size: 24px;
+  }
+  .font-xs-26px {
+    font-size: 26px;
+  }
+  .font-xs-28px {
+    font-size: 28px;
+  }
+  .font-xs-30px {
+    font-size: 30px;
+  }
+  .font-xs-32px {
+    font-size: 32px;
+  }
+}
+
+@media (576px<width<= 768px) {
+  .font-sm-12px {
+    font-size: 12px;
+  }
+  .font-sm-13px {
+    font-size: 13px;
+  }
+  .font-sm-14px {
+    font-size: 14px;
+  }
+  .font-sm-15px {
+    font-size: 15px;
+  }
+  .font-sm-16px {
+    font-size: 16px;
+  }
+  .font-sm-17px {
+    font-size: 17px;
+  }
+  .font-sm-18px {
+    font-size: 18px;
+  }
+  .font-sm-20px {
+    font-size: 20px;
+  }
+  .font-sm-22px {
+    font-size: 22px;
+  }
+  .font-sm-24px {
+    font-size: 24px;
+  }
+  .font-sm-26px {
+    font-size: 26px;
+  }
+  .font-sm-28px {
+    font-size: 28px;
+  }
+  .font-sm-30px {
+    font-size: 30px;
+  }
+  .font-sm-32px {
+    font-size: 32px;
+  }
+}
+
+@media (768px<width<= 992px) {
+  .padding-md{
+    padding: 0 30px 0 30px;
+  }
+  .font-md-12px {
+    font-size: 12px;
+  }
+  .font-md-13px {
+    font-size: 13px;
+  }
+  .font-md-14px {
+    font-size: 14px;
+  }
+  .font-md-15px {
+    font-size: 15px;
+  }
+  .font-md-16px {
+    font-size: 16px;
+  }
+  .font-md-17px {
+    font-size: 17px;
+  }
+  .font-md-18px {
+    font-size: 18px;
+  }
+  .font-md-20px {
+    font-size: 20px;
+  }
+  .font-md-22px {
+    font-size: 22px;
+  }
+  .font-md-24px {
+    font-size: 24px;
+  }
+  .font-md-26px {
+    font-size: 26px;
+  }
+  .font-md-28px {
+    font-size: 28px;
+  }
+  .font-md-30px {
+    font-size: 30px;
+  }
+  .font-md-32px {
+    font-size: 32px;
+  }
+}
+
+@media (width >= 993px) {
+  .padding-lg{
+    padding: 0 30px 0 30px;
+  }
+  .font-lg-12px {
+    font-size: 12px;
+  }
+  .font-lg-13px {
+    font-size: 13px;
+  }
+  .font-lg-14px {
+    font-size: 14px;
+  }
+  .font-lg-15px {
+    font-size: 15px;
+  }
+  .font-lg-16px {
+    font-size: 16px;
+  }
+  .font-lg-17px {
+    font-size: 17px;
+  }
+  .font-lg-18px {
+    font-size: 18px;
+  }
+  .font-lg-20px {
+    font-size: 20px;
+  }
+  .font-lg-22px {
+    font-size: 22px;
+  }
+  .font-lg-24px {
+    font-size: 24px;
+  }
+  .font-lg-26px {
+    font-size: 26px;
+  }
+  .font-lg-28px {
+    font-size: 28px;
+  }
+  .font-lg-30px {
+    font-size: 30px;
+  }
+  .font-lg-32px {
+    font-size: 32px;
+  }
 }
